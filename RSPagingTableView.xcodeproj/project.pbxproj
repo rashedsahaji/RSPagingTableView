@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F43589E292BA168009D9E33 /* RSPagingTableView.docc in Sources */ = {isa = PBXBuildFile; fileRef = 6F43589D292BA168009D9E33 /* RSPagingTableView.docc */; };
+		6F4358A4292BA168009D9E33 /* RSPagingTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F435899292BA168009D9E33 /* RSPagingTableView.framework */; };
+		6F4358A9292BA168009D9E33 /* RSPagingTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4358A8292BA168009D9E33 /* RSPagingTableViewTests.swift */; };
+		6F4358AA292BA168009D9E33 /* RSPagingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F43589C292BA168009D9E33 /* RSPagingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F4358BA292BAA10009D9E33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4358B9292BAA10009D9E33 /* AppDelegate.swift */; };
+		6F4358BC292BAA10009D9E33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4358BB292BAA10009D9E33 /* SceneDelegate.swift */; };
+		6F4358BE292BAA10009D9E33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4358BD292BAA10009D9E33 /* ViewController.swift */; };
+		6F4358C1292BAA10009D9E33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F4358BF292BAA10009D9E33 /* Main.storyboard */; };
+		6F4358C3292BAA12009D9E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F4358C2292BAA12009D9E33 /* Assets.xcassets */; };
+		6F4358C6292BAA12009D9E33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F4358C4292BAA12009D9E33 /* LaunchScreen.storyboard */; };
+		6F4358EB292BB184009D9E33 /* RESTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4358EA292BB184009D9E33 /* RESTManager.swift */; };
+		6F4358EE292BB1D6009D9E33 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4358ED292BB1D6009D9E33 /* Model.swift */; };
+		6F4358EF292BB3C0009D9E33 /* RSPagingTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4358E7292BAADD009D9E33 /* RSPagingTable.swift */; };
+		6F4358F5292BB4E8009D9E33 /* PhotosCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4358F3292BB4E8009D9E33 /* PhotosCells.swift */; };
+		6F4358F6292BB4E8009D9E33 /* PhotosCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F4358F4292BB4E8009D9E33 /* PhotosCells.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F4358A5292BA168009D9E33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F435890292BA168009D9E33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F435898292BA168009D9E33;
+			remoteInfo = RSPagingTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F435899292BA168009D9E33 /* RSPagingTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSPagingTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F43589C292BA168009D9E33 /* RSPagingTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSPagingTableView.h; sourceTree = "<group>"; };
+		6F43589D292BA168009D9E33 /* RSPagingTableView.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = RSPagingTableView.docc; sourceTree = "<group>"; };
+		6F4358A3292BA168009D9E33 /* RSPagingTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSPagingTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4358A8292BA168009D9E33 /* RSPagingTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSPagingTableViewTests.swift; sourceTree = "<group>"; };
+		6F4358B7292BAA10009D9E33 /* RSPagingTableViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSPagingTableViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4358B9292BAA10009D9E33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F4358BB292BAA10009D9E33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6F4358BD292BAA10009D9E33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F4358C0292BAA10009D9E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F4358C2292BAA12009D9E33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F4358C5292BAA12009D9E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F4358C7292BAA12009D9E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F4358E7292BAADD009D9E33 /* RSPagingTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSPagingTable.swift; sourceTree = "<group>"; };
+		6F4358EA292BB184009D9E33 /* RESTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTManager.swift; sourceTree = "<group>"; };
+		6F4358ED292BB1D6009D9E33 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		6F4358F3292BB4E8009D9E33 /* PhotosCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCells.swift; sourceTree = "<group>"; };
+		6F4358F4292BB4E8009D9E33 /* PhotosCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosCells.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F435896292BA168009D9E33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F4358A0292BA168009D9E33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F4358A4292BA168009D9E33 /* RSPagingTableView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F4358B4292BAA10009D9E33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F43588F292BA168009D9E33 = {
+			isa = PBXGroup;
+			children = (
+				6F43589B292BA168009D9E33 /* RSPagingTableView */,
+				6F4358A7292BA168009D9E33 /* RSPagingTableViewTests */,
+				6F4358B8292BAA10009D9E33 /* RSPagingTableViewExample */,
+				6F43589A292BA168009D9E33 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F43589A292BA168009D9E33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F435899292BA168009D9E33 /* RSPagingTableView.framework */,
+				6F4358A3292BA168009D9E33 /* RSPagingTableViewTests.xctest */,
+				6F4358B7292BAA10009D9E33 /* RSPagingTableViewExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F43589B292BA168009D9E33 /* RSPagingTableView */ = {
+			isa = PBXGroup;
+			children = (
+				6F43589C292BA168009D9E33 /* RSPagingTableView.h */,
+				6F43589D292BA168009D9E33 /* RSPagingTableView.docc */,
+				6F4358E7292BAADD009D9E33 /* RSPagingTable.swift */,
+			);
+			path = RSPagingTableView;
+			sourceTree = "<group>";
+		};
+		6F4358A7292BA168009D9E33 /* RSPagingTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F4358A8292BA168009D9E33 /* RSPagingTableViewTests.swift */,
+			);
+			path = RSPagingTableViewTests;
+			sourceTree = "<group>";
+		};
+		6F4358B8292BAA10009D9E33 /* RSPagingTableViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				6F4358F0292BB4BD009D9E33 /* Cell */,
+				6F4358EC292BB1C5009D9E33 /* Model */,
+				6F4358E9292BB16D009D9E33 /* RESTManager */,
+				6F4358B9292BAA10009D9E33 /* AppDelegate.swift */,
+				6F4358BB292BAA10009D9E33 /* SceneDelegate.swift */,
+				6F4358BD292BAA10009D9E33 /* ViewController.swift */,
+				6F4358BF292BAA10009D9E33 /* Main.storyboard */,
+				6F4358C2292BAA12009D9E33 /* Assets.xcassets */,
+				6F4358C4292BAA12009D9E33 /* LaunchScreen.storyboard */,
+				6F4358C7292BAA12009D9E33 /* Info.plist */,
+			);
+			path = RSPagingTableViewExample;
+			sourceTree = "<group>";
+		};
+		6F4358E9292BB16D009D9E33 /* RESTManager */ = {
+			isa = PBXGroup;
+			children = (
+				6F4358EA292BB184009D9E33 /* RESTManager.swift */,
+			);
+			path = RESTManager;
+			sourceTree = "<group>";
+		};
+		6F4358EC292BB1C5009D9E33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6F4358ED292BB1D6009D9E33 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6F4358F0292BB4BD009D9E33 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6F4358F3292BB4E8009D9E33 /* PhotosCells.swift */,
+				6F4358F4292BB4E8009D9E33 /* PhotosCells.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6F435894292BA168009D9E33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F4358AA292BA168009D9E33 /* RSPagingTableView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6F435898292BA168009D9E33 /* RSPagingTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F4358AD292BA168009D9E33 /* Build configuration list for PBXNativeTarget "RSPagingTableView" */;
+			buildPhases = (
+				6F435894292BA168009D9E33 /* Headers */,
+				6F435895292BA168009D9E33 /* Sources */,
+				6F435896292BA168009D9E33 /* Frameworks */,
+				6F435897292BA168009D9E33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSPagingTableView;
+			productName = RSPagingTableView;
+			productReference = 6F435899292BA168009D9E33 /* RSPagingTableView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6F4358A2292BA168009D9E33 /* RSPagingTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F4358B0292BA168009D9E33 /* Build configuration list for PBXNativeTarget "RSPagingTableViewTests" */;
+			buildPhases = (
+				6F43589F292BA168009D9E33 /* Sources */,
+				6F4358A0292BA168009D9E33 /* Frameworks */,
+				6F4358A1292BA168009D9E33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F4358A6292BA168009D9E33 /* PBXTargetDependency */,
+			);
+			name = RSPagingTableViewTests;
+			productName = RSPagingTableViewTests;
+			productReference = 6F4358A3292BA168009D9E33 /* RSPagingTableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6F4358B6292BAA10009D9E33 /* RSPagingTableViewExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F4358E4292BAA12009D9E33 /* Build configuration list for PBXNativeTarget "RSPagingTableViewExample" */;
+			buildPhases = (
+				6F4358B3292BAA10009D9E33 /* Sources */,
+				6F4358B4292BAA10009D9E33 /* Frameworks */,
+				6F4358B5292BAA10009D9E33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSPagingTableViewExample;
+			productName = RSPagingTableViewExample;
+			productReference = 6F4358B7292BAA10009D9E33 /* RSPagingTableViewExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F435890292BA168009D9E33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					6F435898292BA168009D9E33 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					6F4358A2292BA168009D9E33 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					6F4358B6292BAA10009D9E33 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 6F435893292BA168009D9E33 /* Build configuration list for PBXProject "RSPagingTableView" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F43588F292BA168009D9E33;
+			productRefGroup = 6F43589A292BA168009D9E33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F435898292BA168009D9E33 /* RSPagingTableView */,
+				6F4358A2292BA168009D9E33 /* RSPagingTableViewTests */,
+				6F4358B6292BAA10009D9E33 /* RSPagingTableViewExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F435897292BA168009D9E33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F4358A1292BA168009D9E33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F4358B5292BAA10009D9E33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F4358F6292BB4E8009D9E33 /* PhotosCells.xib in Resources */,
+				6F4358C6292BAA12009D9E33 /* LaunchScreen.storyboard in Resources */,
+				6F4358C3292BAA12009D9E33 /* Assets.xcassets in Resources */,
+				6F4358C1292BAA10009D9E33 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F435895292BA168009D9E33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F43589E292BA168009D9E33 /* RSPagingTableView.docc in Sources */,
+				6F4358EF292BB3C0009D9E33 /* RSPagingTable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F43589F292BA168009D9E33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F4358A9292BA168009D9E33 /* RSPagingTableViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F4358B3292BAA10009D9E33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F4358F5292BB4E8009D9E33 /* PhotosCells.swift in Sources */,
+				6F4358EE292BB1D6009D9E33 /* Model.swift in Sources */,
+				6F4358BE292BAA10009D9E33 /* ViewController.swift in Sources */,
+				6F4358EB292BB184009D9E33 /* RESTManager.swift in Sources */,
+				6F4358BA292BAA10009D9E33 /* AppDelegate.swift in Sources */,
+				6F4358BC292BAA10009D9E33 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F4358A6292BA168009D9E33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F435898292BA168009D9E33 /* RSPagingTableView */;
+			targetProxy = 6F4358A5292BA168009D9E33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F4358BF292BAA10009D9E33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F4358C0292BAA10009D9E33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F4358C4292BAA12009D9E33 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F4358C5292BAA12009D9E33 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F4358AB292BA168009D9E33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F4358AC292BA168009D9E33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F4358AE292BA168009D9E33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BB2J2N75ZB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigoh.RSPagingTableView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F4358AF292BA168009D9E33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BB2J2N75ZB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigoh.RSPagingTableView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F4358B1292BA168009D9E33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BB2J2N75ZB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigoh.RSPagingTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F4358B2292BA168009D9E33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BB2J2N75ZB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigoh.RSPagingTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F4358DE292BAA12009D9E33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BB2J2N75ZB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RSPagingTableViewExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigoh.RSPagingTableViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F4358DF292BAA12009D9E33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BB2J2N75ZB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RSPagingTableViewExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigoh.RSPagingTableViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F435893292BA168009D9E33 /* Build configuration list for PBXProject "RSPagingTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F4358AB292BA168009D9E33 /* Debug */,
+				6F4358AC292BA168009D9E33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F4358AD292BA168009D9E33 /* Build configuration list for PBXNativeTarget "RSPagingTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F4358AE292BA168009D9E33 /* Debug */,
+				6F4358AF292BA168009D9E33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F4358B0292BA168009D9E33 /* Build configuration list for PBXNativeTarget "RSPagingTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F4358B1292BA168009D9E33 /* Debug */,
+				6F4358B2292BA168009D9E33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F4358E4292BAA12009D9E33 /* Build configuration list for PBXNativeTarget "RSPagingTableViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F4358DE292BAA12009D9E33 /* Debug */,
+				6F4358DF292BAA12009D9E33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F435890292BA168009D9E33 /* Project object */;
+}
