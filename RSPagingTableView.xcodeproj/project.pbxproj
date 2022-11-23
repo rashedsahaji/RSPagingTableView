@@ -22,6 +22,8 @@
 		6F4358EF292BB3C0009D9E33 /* RSPagingTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4358E7292BAADD009D9E33 /* RSPagingTable.swift */; };
 		6F4358F5292BB4E8009D9E33 /* PhotosCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4358F3292BB4E8009D9E33 /* PhotosCells.swift */; };
 		6F4358F6292BB4E8009D9E33 /* PhotosCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F4358F4292BB4E8009D9E33 /* PhotosCells.xib */; };
+		6FBED9D0292E237400D4358F /* RSPagingTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F435899292BA168009D9E33 /* RSPagingTableView.framework */; };
+		6FBED9D1292E237400D4358F /* RSPagingTableView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6F435899292BA168009D9E33 /* RSPagingTableView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +34,28 @@
 			remoteGlobalIDString = 6F435898292BA168009D9E33;
 			remoteInfo = RSPagingTableView;
 		};
+		6FBED9D2292E237400D4358F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F435890292BA168009D9E33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F435898292BA168009D9E33;
+			remoteInfo = RSPagingTableView;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6FBED9D4292E237400D4358F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6FBED9D1292E237400D4358F /* RSPagingTableView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6F435899292BA168009D9E33 /* RSPagingTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSPagingTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FBED9D0292E237400D4358F /* RSPagingTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +112,7 @@
 				6F4358A7292BA168009D9E33 /* RSPagingTableViewTests */,
 				6F4358B8292BAA10009D9E33 /* RSPagingTableViewExample */,
 				6F43589A292BA168009D9E33 /* Products */,
+				6FBED9CF292E237400D4358F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +186,13 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		6FBED9CF292E237400D4358F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -218,10 +250,12 @@
 				6F4358B3292BAA10009D9E33 /* Sources */,
 				6F4358B4292BAA10009D9E33 /* Frameworks */,
 				6F4358B5292BAA10009D9E33 /* Resources */,
+				6FBED9D4292E237400D4358F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6FBED9D3292E237400D4358F /* PBXTargetDependency */,
 			);
 			name = RSPagingTableViewExample;
 			productName = RSPagingTableViewExample;
@@ -336,6 +370,11 @@
 			target = 6F435898292BA168009D9E33 /* RSPagingTableView */;
 			targetProxy = 6F4358A5292BA168009D9E33 /* PBXContainerItemProxy */;
 		};
+		6FBED9D3292E237400D4358F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F435898292BA168009D9E33 /* RSPagingTableView */;
+			targetProxy = 6FBED9D2292E237400D4358F /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -395,6 +434,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -416,6 +456,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -458,6 +499,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -472,6 +514,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

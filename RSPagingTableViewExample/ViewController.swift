@@ -9,6 +9,10 @@ import UIKit
 import RSPagingTableView
 
 class ViewController: UIViewController, RSPaginatingTableViwDelegate {
+    func didCallRefreshTableView(for tableView: UITableView) {
+//        
+    }
+    
 
     @IBOutlet weak var cutsomTable: RSPaginatingTableView!
     var dataSoure: UITableViewDiffableDataSource<Section, Photo>?
@@ -16,6 +20,7 @@ class ViewController: UIViewController, RSPaginatingTableViwDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        cutsomTable.isLoading = true
         cutsomTable.pagingDelegate = self
         configDataSource()
     }
@@ -51,10 +56,15 @@ class ViewController: UIViewController, RSPaginatingTableViwDelegate {
         snapshot.appendSections([.main])
         snapshot.appendItems(result, toSection: .main)
         dataSoure?.apply(snapshot, animatingDifferences: true)
+        DispatchQueue.main.async {
+            self.cutsomTable.isLoading = false
+        }
     }
     
     func paginate(to page: Int, for tableView: UITableView) {
-        self.callAPI(page: page, limit: 30)
+        DispatchQueue.global().async {
+            self.callAPI(page: page, limit: 30)
+        }
     }
 }
 
